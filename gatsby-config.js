@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter - Dimension V2',
-    author: 'Hunter Chang',
-    description: 'A Gatsby.js V2 Starter based on Dimension by HTML5 UP',
+    title: 'Auxilium Network',
+    author: 'Romain Braud',
+    description: 'CryptoMarkets & Blockchain. Financial Technologies. Unleashed.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

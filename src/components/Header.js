@@ -4,17 +4,13 @@ import React from 'react'
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-diamond"></span>
+      <span className="icon fa-circle-o-notch"></span>
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <h1>Auxilium Network</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
-          <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+        Focused on cryptomarkets and Blockchain technologies{' '}
         </p>
       </div>
     </div>
@@ -54,10 +50,36 @@ const Header = props => (
             }}
           >
             Contact
-          </button>
+          </button> 
         </li>
+        
       </ul>
+      
     </nav>
+    <ul className="icons">
+            <li>
+              <a
+                href="https://twitter.com/romainbraud"
+                className="icon fa-twitter"
+              >
+                <span className="label">Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/romainbraud/" className="icon fa-linkedin">
+                <span className="label">Facebook</span>
+              </a>  
+            </li>
+            <li>
+              <a
+                href="https://github.com/romainbraud/"
+                className="icon fa-github"
+              >
+                <span className="label">GitHub</span>
+              </a>
+            </li>
+          </ul>
+
   </header>
 )
 

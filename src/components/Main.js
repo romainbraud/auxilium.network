@@ -1,8 +1,12 @@
-import PropTypes from 'prop-types'
+
+// import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
+import ContactForm from '../components/ContactForm.js'
+
+
 
 class Main extends React.Component {
   render() {
@@ -11,15 +15,17 @@ class Main extends React.Component {
         className="close"
         onClick={() => {
           this.props.onCloseArticle()
-        }}
+        }
+       }
       ></div>
+      
     )
-
+    
     return (
       <div
         ref={this.props.setWrapperRef}
         id="main"
-        style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
+        style={this.props.timeout ? { display: 'flow-root' } : { display: 'none' }}
       >
         <article
           id="intro"
@@ -32,32 +38,31 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
+          <h3>A technological revolution : Blockchain</h3>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+          During the last decade, Bitcoin with its underlying Blockchain technology has paved the way to new financial peer to peer models. 
+          A new class of Digital Assets has appeared : the Crypto Assets. 
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+          Copy-protected by the network itself, this unique assets which can be fungible, doesn't require any central authority for settlement, enabling their instantly and non-stop tradability. 
           </p>
-          {close}
+          <p>
+          Crypto Assets may represent all forms of traditionnal assets like commodities, company's shares, bonds and more over sound money like Bitcoin. 
+          </p>
+          <p>
+          Traditionnal assets are progressively shifting to Crypto Assets, unleashing the speed and access to exchange value worldwide at a fraction of the current cost.
+          World reknown institutions have already invested massively in this major financial innovation and are building the next infrastucture of tomorrow.
+          </p>
+          <p>
+          It's critical to understand how the financial system evolves to benefit from this changes.
+          We are to here help you to thrive with this new technologies that can unleash your business opportunities.
+          </p>
+          
         </article>
 
         <article
           id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
+className={`${this.props.article === 'work' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
@@ -67,20 +72,22 @@ class Main extends React.Component {
             <img src={pic02} alt="" />
           </span>
           <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
+          Blockchain and cryptoassets are intrinscly tied. One cannot be valuable without the other. 
+					This ecosystem is becoming more connected to traditional finance due to the growth of gateways bridging both worlds, as well as regulatory environment is evolving positively.
           </p>
+          <h3>Cryptomarkets</h3>	
           <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
+          Investing and storing cryptocurrencies can be difficult and hasardous. We assist financial advisors, wealth managers, funds and family offices thanks to our solid network of crypto-exchanges and banking partners.
           </p>
+          <h3>Cryptoassets</h3>
+          <p>
+          We advise companies on Digital Assets. From risk assessment to design or to integrate into an existing infrastructure, we always taking account of the regulatory framework and existing business organisation to optimise processus progressively. 
+          </p>
+          <h3>Technology Developments</h3>
+          <p>
+          We turn your ideas into products. We use agile methodologies and work mostly with advanced technologies for web and finance decentralization. 
+          </p>
+          
           {close}
         </article>
 
@@ -96,13 +103,7 @@ class Main extends React.Component {
             <img src={pic03} alt="" />
           </span>
           <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
+          Working in the blockchain industry since 2013, Romain Braud has developped strong skills in blockchain technologies and its businesses applications. He works closely with banking industry leaders and asset management companies.	
           </p>
           {close}
         </article>
@@ -115,50 +116,32 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li>
-                <input type="submit" value="Send Message" className="special" />
-              </li>
-              <li>
-                <input type="reset" value="Reset" />
-              </li>
-            </ul>
-          </form>
+          
+          <section id="contactUs" className="main special">
+          <header className="major">
+          <ContactForm action="https://www.flexyform.com/f/370c455a0d294de6d3e5e4a65eababa469349bed"></ContactForm>       
+
+           
+    </header>
+</section>
+
           <ul className="icons">
             <li>
               <a
-                href="https://twitter.com/HuntaroSan"
+                href="https://twitter.com/romainbraud"
                 className="icon fa-twitter"
               >
                 <span className="label">Twitter</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
+              <a href="https://www.linkedin.com/in/romainbraud/" className="icon fa-linkedin">
                 <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
+              </a>  
             </li>
             <li>
               <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
+                href="https://github.com/romainbraud/"
                 className="icon fa-github"
               >
                 <span className="label">GitHub</span>
@@ -170,15 +153,6 @@ class Main extends React.Component {
       </div>
     )
   }
-}
-
-Main.propTypes = {
-  route: PropTypes.object,
-  article: PropTypes.string,
-  articleTimeout: PropTypes.bool,
-  onCloseArticle: PropTypes.func,
-  timeout: PropTypes.bool,
-  setWrapperRef: PropTypes.func.isRequired,
 }
 
 export default Main
