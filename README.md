@@ -12,6 +12,6 @@ Use GatsbyCloud for efficiency and simplicity
 
 Install this starter (assuming Gatsby is installed) by running from your CLI:
 <br/>
-`gatsby new mywebsite https://github.com/romainbraud/auxilium_network/`
+`gatsby new mywebsite https://github.com/romainbraud/auxilium.network/`
 
 Run `gatsby develop` in the terminal to start the dev site.
