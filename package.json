@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "author": "Hunter Chang",
   "dependencies": {
-    "gatsby": "^2.24.63",
+    "gatsby": "^3.13.0",
     "gatsby-plugin-manifest": "^2.4.30",
     "gatsby-plugin-react-helmet": "^3.3.11",
     "gatsby-plugin-sass": "^2.3.13",
-    "node-sass": "^4.14.1",
+    "node-sass": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0"
